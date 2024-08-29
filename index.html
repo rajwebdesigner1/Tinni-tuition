@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinni Tuition</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Tinni Tuition</div>
+        <div class="navbar-menu">
+            <a href="#home">Home</a>
+            <a href="#about">Why Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#still-thinking">Still Thinking</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Tinni Tuition</h1>
+            <p>Your gateway to excellent education and personal growth.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="section" style="background: linear-gradient(to right, #ff7e5f, #feb47b);">
+        <div class="section-content">
+            <h2><i class="fas fa-lightbulb"></i> Why Us?</h2>
+            <div class="icon">
+                <i class="fas fa-book"></i>
+            </div>
+            <div class="animated-text">
+                <p>Your personalized learning journey starts here.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section" style="background: linear-gradient(to right, #6a11cb, #2575fc);">
+        <div class="section-content">
+            <h2><i class="fas fa-cogs"></i> Our Services</h2>
+            <div class="icon">
+                <i class="fas fa-tools"></i>
+            </div>
+            <div class="services-info">
+                <h3>Classes 3 to 10</h3>
+                <ul>
+                    <li><i class="fas fa-flask"></i> Science</li>
+                    <li><i class="fas fa-atom"></i> Physics</li>
+                    <li><i class="fas fa-vial"></i> Chemistry</li>
+                    <li><i class="fas fa-book"></i> Biology</li>
+                    <li><i class="fas fa-calculator"></i> Mathematics</li>
+                </ul>
+                <h3>Classes 11 and 12</h3>
+                <ul>
+                    <li><i class="fas fa-laptop-code"></i> IT</li>
+                </ul>
+            </div>
+            <div class="animated-text">
+                <p>Explore a wide range of tailored services to meet your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background: linear-gradient(to right, #ff6f61, #d83a56);">
+        <div class="section-content">
+            <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+            <div class="icon contact-icon">
+                <i class="fas fa-phone" id="call-icon"></i>
+            </div>
+            <div class="animated-text">
+                <p>Get in touch for more details and personalized support.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="still-thinking" class="section" style="background: linear-gradient(to right, #00c6ff, #0072ff);">
+        <div class="section-content">
+            <h2><i class="fas fa-question-circle"></i> Still Thinking?</h2>
+            <div class="icon">
+                <i class="fas fa-thought-bubble"></i>
+            </div>
+            <div class="animated-text">
+                <p>Need more time? We're here to help you make the right choice.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Form</h2>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="ee9daf10-3251-4f22-92f3-01a350ee0219">
+                <input type="text" name="name" placeholder="Student's name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Enter Email" class="contact-inputs" required>
+                <select name="class" class="contact-inputs" required>
+                    <option value="" disabled selected>Select Class</option>
+                    <option value="3-10">Class 3 to 10</option>
+                    <option value="11-12">Class 11 and 12</option>
+                </select>
+                <select name="subject" class="contact-inputs" required id="subjectSelect">
+                    <option value="" disabled selected>Select Subject</option>
+                </select>
+                <textarea name="message" placeholder="Report Us" class="contact-inputs" required></textarea>
+                <button type="submit">Submit <img src="arrow_icon.png" alt="Arrow Icon"></button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tinni Tuition. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
